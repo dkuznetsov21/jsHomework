@@ -39,21 +39,20 @@ function mumu(obj) {
     }
     return obj1;
 }
-testClass = {a: 4, b: 5, c: "as"};
+let testClass = {a: 4, b: 5, c: "as"};
 console.log(mumu(testClass));
+
 
 //Issue 5
 function returnName() {
     return this.name
 }
-obj1 = { age : 23,name:"Devid"};
-obj2 = {name: 'John' , live : true};
+let obj1 = { age : 23,name:"Devid"};
+let obj2 = {name: 'John' , live : true};
 obj1.returnName = returnName;
 console.log(obj1.returnName());
 obj2.returnName = returnName;
 console.log(obj2.returnName());
-
-}
 
 
 //Issue 6
