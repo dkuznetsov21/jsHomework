@@ -31,6 +31,7 @@ function getText(success, error) {
         }});
 }
 
+
 //Isuue 4
 getText(console.log, console.log)
     .then((result)=>{console.log(result);})
