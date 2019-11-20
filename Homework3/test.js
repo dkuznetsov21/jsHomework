@@ -222,6 +222,7 @@ console.log(`Result Task 9: arr = ${arr7}`);
 
 /** Task 10 */
 
+
 arr1100 = ['ananas', 'banan', 'kiwi'];
 arr1200 = ['gasoline', 'kerosene', 'chlorhexidine'];
 arr1300 = arr1100.concat(arr1200);
