@@ -2,6 +2,7 @@
 let fruit = `ba${0/0}a`;
 console.log(fruit);
 
+
 /** 2 task */
 let breakfest = fruit;
 
