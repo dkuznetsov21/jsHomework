@@ -67,7 +67,7 @@ class Controller {
         this.atempts = 44;
         this.getAtempts = function() {
             return this.atempts;
-        }
+        };
         this.switchFinished = function() {
             if (this.finished===true){
                 this.finished = false;
@@ -77,6 +77,5 @@ class Controller {
         }
 
     }
-
 }
 module.exports = Controller;
