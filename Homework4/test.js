@@ -18,12 +18,12 @@ function isEmpty(obj) {
     return Object.keys(obj) == 0;
 }
 
-// ----------- Issue 3
+//Issue 3
 const QTY = {
     Dogs: 100000,
     Cats: 1625476540,
     Bananas: 155330
-}
+};
 let allAnimals = QTY.Dogs + QTY.Cats;
 console.log(allAnimals);
 
