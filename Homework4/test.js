@@ -1,9 +1,10 @@
 //Issue 1.
-const dog = new Object();
+
+const dog = {};
 console.log(dog);
-dog.name = "Moochskctar";
+dog.name = "dogger";
 console.log(dog);
-dog.age = 500;
+dog.age = 8;
 console.log(dog);
 dog.sex = 'male';
 console.log(dog);
@@ -14,20 +15,23 @@ console.log(dog);
 
 
 //Issue2
+
 function isEmpty(obj) {
-    return Object.keys(obj) == 0;
+    return Object.keys(obj) === 0;
 }
 
 //Issue 3
-const QTY = {
-    Dogs: 100000,
-    Cats: 1625476540,
-    Bananas: 155330
+
+const ASD = {
+    Dogs: 100,
+    Cats: 111,
+    Bananas: 333
 };
-let allAnimals = QTY.Dogs + QTY.Cats;
+let allAnimals = ASD.Dogs + ASD.Cats;
 console.log(allAnimals);
 
 //Issue 4
+
 function mumu(obj) {
     const obj1 = {};
     for (let key in obj) {
@@ -44,11 +48,12 @@ console.log(mumu(testClass));
 
 
 //Issue 5
+
 function returnName() {
     return this.name
 }
-let obj1 = { age : 23,name:"Devid"};
-let obj2 = {name: 'John' , live : true};
+let obj1 = { age : 23,name:"Dimon"};
+let obj2 = {name: 'Semen' , live : true};
 obj1.returnName = returnName;
 console.log(obj1.returnName());
 obj2.returnName = returnName;
@@ -56,6 +61,7 @@ console.log(obj2.returnName());
 
 
 //Issue 6
+
 export class Controller {
     constructor(finished = false, done = 5, atempts = 44) {
         this.finished = finished;

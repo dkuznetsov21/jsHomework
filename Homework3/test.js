@@ -1,4 +1,4 @@
-/** Task 1 */
+//Issue 1
 
 // Function Declaration
 function multiplex() {
@@ -37,7 +37,7 @@ console.log(`Result Task 1: multiplex(500, 23, 41, 2, 7, 5) = ${multiplex(500, 2
 console.log('Result Task 1: multiplexExpression = ', multiplexExpression(61, 'hello', false, null));
 console.log('Result Task 1: multiplexArrow = ', multiplexArrow()());
 
-/** Task 2 */
+//Issue 2
 
 function counter() {
     count = 666;
@@ -64,7 +64,7 @@ console.log(`Result Task 2: counter1 = |${counter1(5)}| |${counter1(21)}| |${cou
 console.log(`Result Task 2: counter2 = |${counter2(600)}| |${counter2(2)}| |${counter2(7, true)}| |${counter2(1)}| |${counter2()}|`);
 console.log(`Result Task 2: counter3 = |${counter3()}|`);
 
-/** Task 3 */
+//Issue 3
 
 function findOne() {
 
@@ -107,7 +107,7 @@ console.log(`Result Task 3: findOne([], 'max') = ${findOne([], 'max')}`);
 console.log(`Result Task 3: findOne([true, false, null], 'avg') = ${findOne([true, false, null], 'avg')}`);
 console.log(`Result Task 3: findOne([3], 'max') = ${findOne([3], 'max')}`);
 
-/** Task 4 */
+//Issue 4
 
 function onDone() {
     console.log('Successfull');
@@ -139,12 +139,12 @@ console.log('Result Task 4: conditionManager(condition(), onDone, onError):');
 conditionManager(condition(), onDone, onError);
 console.log('Result Task 4: conditionManager(condition(600, 1000), onDone, onError):');
 conditionManager(condition(600, 1000), onDone, onError);
-/** Task 5 */
+//Issue 5
 
 function functionIsObject() {}
 console.log(`Result Task 5: Function is = ${typeof(functionIsObject.prototype)}`);
 
-/** Task 6 */
+//Issue 6
 
 const testArray = [];
 
@@ -183,7 +183,7 @@ console.log(`Result Task 6: arrController('add', 142) = ${arrController('add', 1
 console.log(`Result Task 6: arrController('remove', false) = ${arrController('remove', false)}`);
 console.log(`Result Task 6: arrController('clear') = ${arrController('clear')}`);
 
-/** Task 7 */
+//Issue 7
 
 let arr = [5, 7, 11, 13];
 let arr2 = arr.slice();
@@ -193,7 +193,7 @@ arr2.push(21);
 console.log(`Result Task 7: arr1 = ${arr}`);
 console.log(`Result Task 7: arr2 = ${arr2}`);
 
-/** Task 8 */
+//Issue 8
 
 let arr6 = [16, 31, 24, 7];
 console.log(`Result Task 8: arr = ${arr6}`);
@@ -202,7 +202,7 @@ arr6.push(function() {
 });
 console.log(`Result Task 8: arr + function = ${(arr6[arr6.length-1])()}`);
 
-/** Task 9 */
+//Issue 9
 
 let arr7 = [1, 3, 5, 7, 11, 13, 3, 5, 7];
 
@@ -220,7 +220,7 @@ console.log(`Result Task 9: arr = ${arr7}`);
 console.log(`Result Task 9: count = ${arrReplaceValue(arr7, 3, 5)}`);
 console.log(`Result Task 9: arr = ${arr7}`);
 
-/** Task 10 */
+//Issue 10
 
 
 arr1100 = ['ananas', 'banan', 'kiwi'];

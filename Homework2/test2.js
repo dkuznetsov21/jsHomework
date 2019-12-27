@@ -7,7 +7,7 @@ const color = 'Red';
 const check = true;
 
 if (apples > oranges) {
-    if (oranges < pears){
+    if (oranges < pears) {
         return !check;
     } else {
         if (!color) {

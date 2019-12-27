@@ -1,10 +1,12 @@
 // 1. Напишите функцию-калбэк (любую) и вызовите её на счетчике setTimeout(callback, period). Отсрочку period установите в 1000 мс.
+
 function test() {
-    console.log('AnyWaytext');
+    console.log('text');
 }
 setTimeout(test,1000);
 
 //2. Напишите функцию sleep(ms) должна возвращать промис, который перейдёт в состояние «выполнен» через ms миллисекунд
+
 function sleep(ms) {
     return new Promise(res => setTimeout(res, ms));
 }
@@ -33,10 +35,13 @@ function getText(success, error) {
 
 
 //Isuue 4
+
 getText(console.log, console.log)
     .then((result)=>{console.log(result);})
     .catch((errorMessage)=>{console.log(errorMessage);});
+
 //issue 5
+
 async  function getText1(success, error) {
     let link;
     try {
