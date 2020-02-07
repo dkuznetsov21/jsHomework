@@ -14,7 +14,7 @@ function sleep(ms) {
 //3. Измените функцию так, чтобы она возвращала промис:
 
 
-function getText(success, error) {
+function getText() {
     return new Promise((resolve,reject) =>{
         let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
         let link = 'https://ww---w.w3.org/TR/PNG/iso_8859-1.txt';
@@ -26,9 +26,9 @@ function getText(success, error) {
             if (xhr.readyState !== 4) reject;
 
             if (xhr.status !== 200) {
-                reject(error({code: xhr.status, message: xhr.statusText}));
+                reject({code: xhr.status, message: xhr.statusText});
             } else {
-                resolve(success(xhr.responseText));
+                resolve(xhr.responseText);
             }
         }});
 }
@@ -36,23 +36,23 @@ function getText(success, error) {
 
 //Isuue 4
 
-getText(console.log, console.log)
+getText()
     .then((result)=>{console.log(result);})
     .catch((errorMessage)=>{console.log(errorMessage);});
 
 //issue 5
 
-async  function getText1(success, error) {
+async function getText1(success, error) {
     let link;
     try {
-        let XMLHttpRequest = await require("xmlhttprequest").XMLHttpRequest;
+        let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
         link = 'https://www.w3.org/TR/PNG/iso_8859-1.txt';
         const xhr = new XMLHttpRequest();
         xhr.open('GET', link);
         xhr.send();
-        xhr.onreadystatechange = function () {
+        xhr.onreadystatechange = async function () {
 
-            return (success(xhr.responseText));
+            return await success(xhr.responseText);
         }
     } catch (error) {
         console.log(error);

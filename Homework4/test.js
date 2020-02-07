@@ -17,7 +17,7 @@ console.log(dog);
 //Issue2
 
 function isEmpty(obj) {
-    return Object.keys(obj) === 0;
+    return Object.keys(obj).length === 0;
 }
 
 //Issue 3
@@ -59,10 +59,9 @@ console.log(obj1.returnName());
 obj2.returnName = returnName;
 console.log(obj2.returnName());
 
-
 //Issue 6
 
-export class Controller {
+export default class Controller {
     constructor(finished = false, done = 5, atempts = 44) {
         this.finished = finished;
         this.done = done;
